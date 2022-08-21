@@ -25,7 +25,7 @@ public class EditLeadsPage extends ProjectSpecificMethods{
 	}
 	@When ("Enter firstname as (.*)$")
 	public void typeFirstname(String firstname) {
-		driver.findElement(By.xpath("(//input[@name='firstName'])[3]")).sendKeys("Divya");
+		driver.findElement(By.xpath("(//input[@name='firstName'])[3]")).sendKeys(firstname);
 	}
 	@And ("click find leads button")
 	public void clickFindLeadsButton() throws InterruptedException {
